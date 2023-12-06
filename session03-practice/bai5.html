@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Table1 */
+    .table1{
+        width: 400px;
+        height: 400px;
+        border-collapse: collapse;
+    }
+    .table1 td{
+        width: 100px;
+        background-color: black;
+    }
+    .table1 .col1{
+        background-color: white;
+    }
+    .table1 .col2{
+        background-color: white;
+    }
+
+
+    /* Table2 */
+    h2{
+        color: blue;
+    }
+    .table2 {
+        width: 450px;
+        border-collapse: collapse;
+        text-align: center;
+    }
+   
+    .row1 .firstBox{
+        background-color: red;
+        color: white;
+    }
+    .row1 .lastBox{
+        background-color: blue;
+        color: white;
+    }
+    .row1 td{
+        background-color: darkorange;
+        color: white;
+    }
+
+    .row2 .sun , .row4 .sun , .row5 .sun , .row6 .sun , .row7 .sun{
+        color: red;
+    }
+    .row2 .sat , .row3 .sat , .row4 .sat , .row5 .sat , .row6 .sat , .row7 .sat{
+        color: blue;
+    }
+
+    .row3 td, .row4 td , .row5 td , .row6 td , .row7 td{
+        border: 1px solid gray;
+    }
+
+    .row3 td sub , .row4 td sub , .row5 td sub , .row6 td sub , .row7 td sub{
+        color: black;
+        font-size: 9px;
+    }
+
+</style>
+<body bgcolor="orange">
+    <!-- Phan 1 -->
+    <table class="table1">
+        <thead>
+            <tr>
+                <th></th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>A</th>
+                <td class="col1"></td>
+                <td></td>
+                <td class="col1"></td>
+                <td></td>
+                <td class="col1"></td>
+                <td></td>
+                <td class="col1"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>B</th>
+                <td></td>
+                <td class="col2"></td>
+                <td></td>
+                <td class="col2"></td>
+                <td></td>
+                <td class="col2"></td>
+                <td></td>
+                <td class="col2"></td>
+            </tr>
+            <tr>
+                <th>C</th>
+                <td class="col1"></td>
+                <td></td>
+                <td class="col1"></td>
+                <td></td>
+                <td class="col1"></td>
+                <td></td>
+                <td class="col1"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>D</th>
+                <td></td>
+                <td class="col2"></td>
+                <td></td>
+                <td class="col2"></td>
+                <td></td>
+                <td class="col2"></td>
+                <td></td>
+                <td class="col2"></td>
+            </tr>
+            <tr>
+                <th>E</th>
+                <td class="col1"></td>
+                <td></td>
+                <td class="col1"></td>
+                <td></td>
+                <td class="col1"></td>
+                <td></td>
+                <td class="col1"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>F</th>
+                <td></td>
+                <td class="col2"></td>
+                <td></td>
+                <td class="col2"></td>
+                <td></td>
+                <td class="col2"></td>
+                <td></td>
+                <td class="col2"></td>
+            </tr>
+            <tr>
+                <th>H</th>
+                <td class="col1"></td>
+                <td></td>
+                <td class="col1"></td>
+                <td></td>
+                <td class="col1"></td>
+                <td></td>
+                <td class="col1"></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br><br>
+    <!-- Phan 2 -->
+    <table class="table2">
+        <caption><h2>Tháng 10 - October</h2></caption>
+        <tr class="row1">
+            <td class="firstBox">C.Nhật</td>
+            <td>T.Hai</td>
+            <td>T.Ba</td>
+            <td>T.Tư</td>
+            <td>T.Năm</td>
+            <td>T.Sáu</td>
+            <td class="lastBox">T.Bảy</td>
+        </tr>
+        <tr class="row2">
+            <td class="sun">Sun</td>
+            <td>Mon</td>
+            <td>Tue</td>
+            <td>Wed</td>
+            <td>Thu</td>
+            <td>Fri</td>
+            <td class="sat">Sat</td>
+        </tr>
+        <tr class="row3">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1<sub>13</sub></td>
+            <td>2<sub>14</sub></td>
+            <td class="sat">3<sub>15</sub></td>
+        </tr>
+        <tr class="row4">
+            <td class="sun">4<sub>16</sub></td>
+            <td>5<sub>17</sub></td>
+            <td>6<sub>18</sub></td>
+            <td>7<sub>19</sub></td>
+            <td>8<sub>20</sub></td>
+            <td>9<sub>21</sub></td>
+            <td class="sat">10<sub>22</sub></td>
+        </tr>
+        <tr class="row5">
+            <td class="sun">11<sub>23</sub></td>
+            <td>12<sub>24</sub></td>
+            <td>13<sub>25</sub></td>
+            <td>14<sub>26</sub></td>
+            <td>15<sub>27</sub></td>
+            <td>16<sub>28</sub></td>
+            <td class="sat">17<sub>29</sub></td>
+        </tr>
+        <tr class="row6">
+            <td class="sun">18<sub>1.9</sub></td>
+            <td>19<sub>2</sub></td>
+            <td>20<sub>3</sub></td>
+            <td>21<sub>4</sub></td>
+            <td>22<sub>5</sub></td>
+            <td>23<sub>6</sub></td>
+            <td class="sat">24<sub>7</sub></td>
+        </tr>
+        <tr class="row7">
+            <td class="sun">25<sub>8</sub></td>
+            <td>26<sub>9</sub></td>
+            <td>27<sub>10</sub></td>
+            <td>28<sub>11</sub></td>
+            <td>29<sub>12</sub></td>
+            <td>30<sub>13</sub></td>
+            <td class="sat">31<sub>14</sub></td>
+        </tr>
+    </table>
+
+</body>
+</html>
