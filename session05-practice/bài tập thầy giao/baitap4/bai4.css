@@ -1,0 +1,26 @@
+body{
+    background-image: url(apps.20898.14610786053843576.c718bbac-780a-4f0a-9096-92a785a8770e.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 270px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.head1{
+    color: white;
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.head2{
+    color: white;
+    margin-bottom: 15px;
+}
+
+button{
+    color: white;
+    background-color: rgb(216, 108, 25);
+    padding: 10px;
+}

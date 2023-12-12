@@ -1,0 +1,166 @@
+body{
+    background-color: darkcyan;
+}
+p{
+    color: lightgrey;
+    width: 620px;
+}
+
+.item2 p{
+    color: lightgrey;
+    width: 330px;
+}
+
+h3{
+    width: 330px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+}
+
+.item1{
+    background-color:aqua;
+    width: 350px;
+    height: 200px;
+    border-radius: 4%;
+}
+
+.item3{
+    position: absolute;
+    top: 0;
+    left: 370px;
+}
+
+.avatar1{
+    width: 65px;
+    height: 50px;
+    text-align: center;
+    background-color: pink;
+    font-size: 30px;
+    padding-top: 20px;
+    color: white;
+}
+
+.avatar2{
+    width: 65px;
+    height: 50px;
+    text-align: center;
+    background-color: pink;
+    font-size: 30px;
+    padding-top: 20px;
+    color: white;
+}
+
+.avatar3{
+    width: 65px;
+    height: 50px;
+    text-align: center;
+    background-color: pink;
+    font-size: 30px;
+    padding-top: 20px;
+    color: white;
+}
+
+.avatar4{
+    width: 65px;
+    height: 50px;
+    text-align: center;
+    background-color: pink;
+    font-size: 30px;
+    padding-top: 20px;
+    color: white;
+}
+
+
+
+.item3-children1 p{
+    border-bottom: 1px solid darkorange;
+    width: 400px;
+    position: relative;
+}
+
+.title1{
+    position: absolute;
+    top: 0;
+    left: 90px;
+}
+
+.item3-children2 p{
+    border-bottom: 1px solid darkorange;
+    width: 400px;
+    position: relative;
+}
+
+.title2{
+    position: absolute;
+    top: 110px;
+    left: 90px;
+}
+
+.item3-children3 p{
+    border-bottom: 1px solid darkorange;
+    width: 400px;
+    position: relative;
+}
+
+.title3{
+    position: absolute;
+    top: 210px;
+    left: 90px;
+}
+
+.item3-children4 p{
+    border-bottom: 1px solid darkorange;
+    width: 400px;
+    position: relative;
+}
+
+.title4{
+    position: absolute;
+    top: 310px;
+    left: 90px;
+}
+
+.title-a{
+    margin-bottom: 20px;
+    width: 500px;
+    font-weight: 600;
+}
+
+.title-b{
+    color: lightgrey;
+}
+
+.title-c{
+    margin-bottom: 20px;
+    width: 500px;
+    font-weight: 600;
+}
+
+.title-d{
+    color: lightgrey;
+}
+
+.title-e{
+    margin-bottom: 20px;
+    width: 500px;
+    font-weight: 600;
+}
+
+.title-f{
+    color: lightgrey;
+}
+
+.title-g{
+    margin-bottom: 20px;
+    width: 500px;
+    font-weight: 600;
+}
+
+.title-h{
+    color: lightgrey;
+}

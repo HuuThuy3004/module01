@@ -1,0 +1,25 @@
+*{
+    background-color: rgb(117, 114, 122);
+}
+
+
+.title{
+    font-size: 26px;
+    font-weight: 600;
+    position: relative;
+    left: 290px;
+}
+
+img{
+    height: 300px;
+    position: relative;
+    left: 170px;
+}
+
+.content{
+    width: 75%;
+}
+
+span{
+    color: red;
+}

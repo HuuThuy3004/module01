@@ -1,0 +1,23 @@
+.content{
+    margin-bottom: 10px;
+}
+
+.content1{
+    color: yellow;
+}
+
+.content2{
+    color: blue;
+}
+
+.content3{
+    color: red;
+    width: 900px;
+    
+}
+
+.content4{
+    width: 910px;
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+}
