@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bai5.css">
+</head>
+<body>
+    <b>Bai7</b> 
+    <div class="bai7">
+        Dấu == và === là dấu toán tử So Sánh nhưng khác nhau ở 2 dấu này là:
+        <ol>
+            <li>== : dùng để so sánh 2 giá trị </li>
+            <li>=== : dùng để so sánh 2 giá trị và kiểu dữ liệu </li>
+        </ol>
+        let a = 5; <br>
+        let b= “5”; <br>
+        console.log(a==b); => true<br> 
+        console.log(a===b); => flase<br>
+        console.log(a!=b); => false<br> 
+        console.log(a!==b); => true<br>
+    </div>
+
+    <b>Bai8</b> 
+    <div class="bai8">
+        dấu ++ , -- là 2 toán tử tăng giảm
+        độ ưu tiên thì sẽ ưu tiên: [++ or -- ] -> () -> toán tử kia 
+        Tính giá trị của biếu thức sau: <br>
+        let a=6; <br>
+        let result: ++a + a + a++ + ++a + a; => Kết quả biến result là: <span id="result"></span>
+    </div>
+
+    <b>Bai9</b> 
+    <div class="bai9">
+        Kết quả của các phép toán. <br>
+        console.log(0 || NaN ||"Rikkei Academy"||null); => <span id="kq1"></span> <br>
+        console.log(null || NaN || false || null); => <span id="kq2"></span> <br>
+        console.log(undefined || 1 || 5 || null); => <span id="kq3"></span> <br>
+        console.log("" || null || 5 || NaN); => <span id="kq4"></span> <br>
+        console.log(1 || null || 12|| NaN); => <span id="kq5"></span> 
+    </div>
+
+    <b>Bai10</b> 
+    <div class="bai10">
+        Kết quả của các phép toán. <br>
+        console.log(0 && 1 && "Rikkei Academy" &&null);; => <span id="kqa"></span> <br>
+        console.log(2 && NaN && false && null); => <span id="kqb"></span> <br>
+        console.log(3 && 1 && 5 && null); => <span id="kqc"></span> <br>
+        console.log("1" && undefined && 5 && NaN); => <span id="kqd"></span> <br>
+        console.log(1 && null && 12&& NaN); => <span id="kqe"></span> 
+    </div>
+
+</body>
+<script src="bai5.js"></script>
+</html>
