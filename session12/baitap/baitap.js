@@ -1,12 +1,11 @@
 let todoList = ["Go to school at 7am" , "Read book at 12am"];
-let work;
 let exit = true;
 
 while (exit == true) {
     let input = prompt("Nhap tung chu cai sau (C-R-U-D)");
     switch (input) {
         case "C":
-            work = prompt("Them cong viec ban muon:");
+            let work = prompt("Them cong viec ban muon:");
             todoList.push(work);
             console.log(todoList);
             break;
