@@ -1,0 +1,30 @@
+*{
+    color: white;
+    margin: 0;
+    background-color: #151515;
+}
+
+.text-area {
+    text-align: center;
+}
+
+textarea{
+    background-color: black;
+    margin: 10px;
+    font-size: 12px;
+}
+
+.keyboard{
+    height: 120px;
+    background-color: #151515;
+    text-align: center;
+}
+
+.space{
+    width: 260px;
+    height: 23px;
+}
+
+button{
+    background-color: black;
+}
