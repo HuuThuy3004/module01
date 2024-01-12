@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <div class="form-signUp">
+        <p>Username</p>
+        <input type="text" placeholder="Tài khoản" id="user"> 
+        <p>Email</p>
+        <input type="email" placeholder="Email người dùng" id="email"> 
+        <p>Password</p>
+        <input type="password" placeholder="Mật khẩu" id="password">
+        <p>Confirm password</p>
+        <input type="password" placeholder="Xác nhận mật khẩu" id="password-cofirm"> 
+    </div> <br>
+    <div class="btn-signUp">
+        <button onclick="sign_up()">Đăng kí</button>
+    </div>
+</body>
+<script>
+    let users = JSON.parse(localStorage.getItem("users"))||[];
+
+    function sign_up() {
+        let username , email , password , passwordCofirm;
+        username = document.getElementById('user').value;
+        email = document.getElementById('email').value;
+        password = document.getElementById('password').value;
+        passwordCofirm = document.getElementById('password-cofirm').value;
+
+        let user = {
+            name: username,
+            email: email,
+            pass: password,
+            passCofirm: passwordCofirm 
+        };
+
+        //Check Email && Check Password
+        let checkEmail = true;
+        for (const i in users) {
+            if (users[i].email == email) {
+                console.log("Email ton tai !!");
+                checkEmail = false;
+            }
+            if(password != passwordCofirm){
+                console.log("Password khong giong nhau !");
+                checkEmail = false;
+            }
+        }
+        if(checkEmail == true){
+            users.push(user);
+            window.location.href="./login.html"
+        }
+
+        localStorage.setItem("users" , JSON.stringify(users));
+    }
+</script>
+</html>

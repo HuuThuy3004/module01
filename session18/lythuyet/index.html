@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>storing data in the browser</h1>
+</body>
+<script>
+    localStorage.setItem("Thuy" , "Dragon")
+    localStorage.setItem("Binh" , "Wolf")
+    localStorage.setItem("Thinh" , "Bear")
+    localStorage.setItem("Huy" , "Duck")
+    localStorage.setItem("Long" , "Chicken")
+    localStorage.setItem("Long" , "Chicken")
+
+
+    let result = localStorage.getItem("Thuy");
+    console.log(result);
+    // localStorage.removeItem("Thuy");
+    // localStorage.clear();
+    // sessionStorage.setItem("NIN" , "kknm");
+
+    let obj = {
+        name: "thuy",
+        id: 1
+    }
+    localStorage.setItem("student" , JSON.stringify(obj));
+    let result2 = JSON.parse(localStorage.getItem("student"));
+    console.log(result2);
+
+
+</script>
+</html>
