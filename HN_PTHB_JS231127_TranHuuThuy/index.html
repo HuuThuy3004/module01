@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table class="form-info-student">
+            <h2>I/ Thong tin hoc vien</h2>
+            <tr>
+                <td>Ho va ten:</td>
+                <td>
+                    <input id="fullname" type="text" placeholder="vui long nhap ho va ten" class="form-input">
+                    <span class="error-message"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input id="email" type="email" placeholder="vui long nhap email" class="form-input">
+                    <span class="error-message"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>So dien thoai:</td>
+                <td>
+                    <input id="phone" type="text" placeholder="vui long nhap so dien thoai" class="form-input">
+                    <span class="error-message"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Que quan:</td>
+                <td>
+                    <input id="country" type="text" placeholder="vui long que quan" class="form-input">
+                    <span class="error-message"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Gioi tinh:</td>
+                <td>
+                    <input type="radio" name="gender" value="Nam" class="form-input" checked> Nam
+                    <input type="radio" name="gender" value="Nữ" class="form-input"> Nữ
+                    <span class="error-message"></span>
+                    <span class="error-message"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="index" type="hidden">
+                </td>
+                <td>
+                    <button id="save" onclick="onSave()">Lưu lại</button>
+                    <button id="update" onclick="updateStudent()" style="display: none;">Cập nhật</button>
+                </td>
+            </tr>
+    </table>
+
+    <table border="1" class="form-list-student"  cellpadding="12" style="border-collapse: collapse;">
+        <thead>
+            <h2>II/ TABLE STUDENT</h2>
+            <h3>Danh sach hoc vien</h3>
+            <div class="search-student">
+                <label for="search">Tim kiem hoc vien:</label>
+                <input id="search" class="input-search" type="text">
+                <button class="btn-search" onclick="searchStudent()">Search</button>
+            </div> <br>
+            <tr>
+                <th>ID</th>
+                <th>Ho va ten</th>
+                <th>Email</th>
+                <th>So dien thoai</th>
+                <th>Que quan</th>
+                <th>Gioi tinh</th>
+                <th style="column-span: 3;">Action</th>
+                <th>
+                    <button>Sap xep theo (alpha b)</button>
+                </th>
+            </tr>
+        </thead>
+        <tbody class="list-body"></tbody>
+    </table>
+
+</body>
+<script src="script.js"></script>
+</html>
