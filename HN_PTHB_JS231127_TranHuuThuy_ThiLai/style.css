@@ -1,0 +1,86 @@
+img {
+  width: 70px;
+}
+
+.image-border {
+  width: 60%;
+  padding: 20px 0;
+  border-bottom: 2px solid lightgrey;
+}
+
+.input-1 input {
+  width: 30%;
+}
+
+.input-2 {
+  display: flex;
+  gap: 30px;
+}
+
+.input-1 p input,
+.input-2 p input {
+  display: block;
+  margin-top: 8px;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 15px;
+  border: 1px solid grey;
+  outline: none;
+}
+
+.btn-save {
+  width: 80px;
+  padding: 10px;
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.btn-update {
+  width: 80px;
+  padding: 10px;
+  background-color: rgb(212, 0, 255);
+  border: none;
+  border-radius: 5px;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.btn-save:hover {
+  background-color: rgb(37, 37, 183);
+}
+
+thead .title {
+  text-align: center;
+}
+
+.btn-view,
+.btn-edit,
+.btn-delete {
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-view:hover {
+  background-color: aqua;
+}
+
+.btn-edit:hover {
+  background-color: rgb(162, 255, 0);
+}
+
+.btn-delete:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.image-cards input:hover {
+  display: inline-block;
+}
+
+small {
+  color: red;
+}

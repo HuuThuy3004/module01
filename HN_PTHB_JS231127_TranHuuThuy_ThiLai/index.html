@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Phan1 -->
+    <div class="part-1">
+      <h1>Select Card</h1>
+      <div class="image-cards">
+        <label for="card-1">
+          <img
+            src="https://www.apemockups.com/wp-content/uploads/edd/2017/09/visa-card-template-u75.jpg"
+            alt=""
+          />
+        </label>
+        <input
+          type="radio"
+          id="card-1"
+          name="card"
+          value="visa"
+          data-urlImage="https://www.apemockups.com/wp-content/uploads/edd/2017/09/visa-card-template-u75.jpg"
+          hidden
+          checked
+        />
+
+        <label for="card-2">
+          <img
+            src="https://cardy.vn/upload/images/the-tin-dung/600x480/2/mbvisa.jpg"
+            alt=""
+          />
+        </label>
+        <input
+          type="radio"
+          id="card-2"
+          name="card"
+          value="mb-bank"
+          data-urlImage="https://cardy.vn/upload/images/the-tin-dung/600x480/2/mbvisa.jpg"
+          hidden
+        />
+
+        <label for="card-3">
+          <img
+            src="https://th.bing.com/th/id/OIP._iRyrdyI3EMefzNkXkl7rAHaEk?w=1052&h=650&rs=1&pid=ImgDetMain"
+            alt=""
+          />
+        </label>
+        <input
+          type="radio"
+          id="card-3"
+          name="card"
+          value="sampath-bank"
+          data-urlImage="https://th.bing.com/th/id/OIP._iRyrdyI3EMefzNkXkl7rAHaEk?w=1052&h=650&rs=1&pid=ImgDetMain"
+          hidden
+        />
+
+        <label for="card-4">
+          <img
+            src="https://logosmarcas.net/wp-content/uploads/2020/09/Mastercard-Simbolo.jpg"
+            alt=""
+          />
+        </label>
+        <input
+          type="radio"
+          id="card-4"
+          name="card"
+          value="master-card"
+          data-urlImage="https://logosmarcas.net/wp-content/uploads/2020/09/Mastercard-Simbolo.jpg"
+          hidden
+        />
+
+        <label for="card-5">
+          <img
+            src="https://th.bing.com/th/id/OIP.BjY5MsW1uBz-4dboOcUF0wHaE7?rs=1&pid=ImgDetMain"
+            alt=""
+          />
+        </label>
+        <input
+          type="radio"
+          id="card-5"
+          name="card"
+          value="techcombank"
+          data-urlImage="https://th.bing.com/th/id/OIP.BjY5MsW1uBz-4dboOcUF0wHaE7?rs=1&pid=ImgDetMain"
+          hidden
+        />
+      </div>
+
+      <div class="input-1">
+        <p>
+          Card Number
+          <input id="card-number" type="text" placeholder="Nhap so" />
+          <small id="error-cardNumber"></small>
+        </p>
+      </div>
+      <div class="input-2">
+        <p>
+          Expiry Date
+          <input id="expiry-date" type="text" placeholder="MM/YY" />
+          <small id="error-expiryDate"></small>
+        </p>
+        <p>
+          CVC/CVV
+          <input id="cvc" type="password" placeholder="Nhap CVC" />
+          <small id="error-cvc"></small>
+        </p>
+        <p>
+          <input id="index" type="text" style="display: none" />
+        </p>
+      </div>
+      <button class="btn-save" onclick="onSave()">Save</button>
+      <button class="btn-update" onclick="updateCard()" style="display: none">Update</button>
+    </div>
+
+    <!-- Phan2 -->
+    <div class="part-2">
+      <table border="1" cellpadding="12" style="border-collapse: collapse">
+        <thead>
+          <h1>Table Card</h1>
+          <tr class="title">
+            <td>Card img</td>
+            <td>Card number</td>
+            <td>Expiry Date</td>
+            <td>CVV</td>
+            <td>Action</td>
+          </tr>
+        </thead>
+        <tbody class="list-body"></tbody>
+      </table>
+    </div>
+  </body>
+
+  <script src="index.js"></script>
+</html>
