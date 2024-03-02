@@ -162,7 +162,7 @@ function updateCard() {
 }
 
 //Cau6
-function viewCard(index) {
+function viewCard() {
     let cards = JSON.parse(localStorage.getItem('list-card')) || []
   
 
@@ -251,7 +251,7 @@ function validateCard(card) {
     }
     else{
         if (card.cvc.length != 3) {
-            error.cvc = 'Nhap du qua 3 so !'
+            error.cvc = 'Nhap du 3 so !'
             error.isError = true
         }
         else{
